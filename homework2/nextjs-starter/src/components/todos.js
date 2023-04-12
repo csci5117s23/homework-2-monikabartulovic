@@ -6,6 +6,31 @@
 // a link to visit /done
 
 import React from "react";
+import { Link,Route } from 'react-router-dom';
+
+
+function addToList(){
+
+
+}
+
+function deleteFromList(){
+
+}
+
+
+function showAllItems(){
+
+
+}
+
+function showIncompleteTasks(){
+
+}
+
+function showCompletedTasks(){
+
+}
 
 export default function TodoList(props) {
     return (
@@ -19,14 +44,26 @@ export default function TodoList(props) {
         <input type="text" id="new-todo" placeholder="add new task"
         />
 
-        <button type="submit" className="btn btn-primary">
+        <button type="submit" className="btn btn-primary" onClick={addToList}>
           Add
         </button>  
       </form>
 
-      <div className= "showTasks">
-        <button type="button" className="btn btn-primary" aria-pressed="true">
-          <span>Show all</span>
+      <div className= "showAllTasks">
+        <button type="button" className="btn btn-primary" aria-pressed="true" onClick={showAllItems}>
+          <span>Show All Tasks</span>
+        </button>
+      </div>
+
+      <div className= "showCompleted">
+        <button type="button" className="btn btn-primary" aria-pressed="true" onClick={showCompletedTasks}>
+          <span>Show Completed Tasks</span>
+        </button>
+      </div>
+
+      <div className= "showCompleted">
+        <button type="button" className="btn btn-primary" aria-pressed="true" onClick={showIncompleteTasks}>
+          <span>Show Incomplete Tasks</span>
         </button>
       </div>
 
@@ -41,7 +78,7 @@ export default function TodoList(props) {
           </div>
 
           <div className="btn-group">
-            <button type="button" className="btn btn-primary">
+            <button type="button" className="btn btn-primary" onClick={deleteFromList}>
               Delete 
             </button><span>{props.name}</span>
           </div>
@@ -52,3 +89,5 @@ export default function TodoList(props) {
     </div>
     );
   }
+
+
