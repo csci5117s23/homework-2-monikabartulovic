@@ -7,7 +7,7 @@ Please fill out all of the following sections to help us grade your submission:
 
 ## Student (to be completed individually)
 
-* First Last, x500@umn.edu
+* Monika Bartulovic, bartu043@umn.edu
 
 ## Link to Site
 
@@ -15,6 +15,10 @@ Please fill out all of the following sections to help us grade your submission:
 
 ## Challenge Task
 
-* I started the challenge task: [yes/no]
-* I completed the challenge task: [yes/no]
+* I started the challenge task: [no]
+* I completed the challenge task: [no]
 
+
+## References
+* I used code from the MDN website https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_todo_list_beginning to help me get started since I had trouble with React/Components but after going through this site it
+helped me understand the concepts more and I was able to alter the code to my own personal list. 
