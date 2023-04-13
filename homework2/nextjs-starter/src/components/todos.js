@@ -9,85 +9,84 @@ import React from "react";
 import { Link,Route } from 'react-router-dom';
 
 
-function addToList(){
+function addToList(){ // adding an item to the todo list
+
+}
+
+function deleteFromList(){ // deleting an item from the todo list
+
+}
+
+
+function showAllItems(){ // showing every single item
 
 
 }
 
-function deleteFromList(){
+function showIncompleteTasks(){ // showing only the incomplete tasks
 
 }
 
-
-function showAllItems(){
-
+function showCompletedTasks(){ // showing only the completed tasks
 
 }
 
-function showIncompleteTasks(){
+// export default function TodoList(props) {
+//     return (
+//       <div className="addToList">
+//       <form>
+//         <h2 className="label-wrapper">
+//           <label for="new-todo-input" className="label__lg">
+//             Tasks
+//           </label>
+//         </h2>
+//         <input type="text" id="new-todo" placeholder="add new task"
+//         />
 
-}
+//         <button type="submit" className="btn btn-primary" onClick={addToList}>
+//           Add
+//         </button>  
+//       </form>
 
-function showCompletedTasks(){
+//       <div className= "showAllTasks">
+//         <button type="button" className="btn btn-primary" aria-pressed="true" onClick={showAllItems}>
+//           <span>Show All Tasks</span>
+//         </button>
+//       </div>
 
-}
+//       <div className= "showCompleted">
+//         <button type="button" className="btn btn-primary" aria-pressed="true" onClick={showCompletedTasks}>
+//           <span>Show Completed Tasks</span>
+//         </button>
+//       </div>
 
-export default function TodoList(props) {
-    return (
-      <div className="addToList">
-      <form>
-        <h2 className="label-wrapper">
-          <label for="new-todo-input" className="label__lg">
-            Tasks
-          </label>
-        </h2>
-        <input type="text" id="new-todo" placeholder="add new task"
-        />
+//       <div className= "showCompleted">
+//         <button type="button" className="btn btn-primary" aria-pressed="true" onClick={showIncompleteTasks}>
+//           <span>Show Incomplete Tasks</span>
+//         </button>
+//       </div>
 
-        <button type="submit" className="btn btn-primary" onClick={addToList}>
-          Add
-        </button>  
-      </form>
+//     <div className="list">
+//       <ul>
+//         <li className="todo stack-small">
+//           <div>
+//             <input id="todo-2" type="checkbox" defaultChecked={props.completed}/>
+//             <label className="todo-label">
+//               {props.name}
+//             </label>
+//           </div>
 
-      <div className= "showAllTasks">
-        <button type="button" className="btn btn-primary" aria-pressed="true" onClick={showAllItems}>
-          <span>Show All Tasks</span>
-        </button>
-      </div>
-
-      <div className= "showCompleted">
-        <button type="button" className="btn btn-primary" aria-pressed="true" onClick={showCompletedTasks}>
-          <span>Show Completed Tasks</span>
-        </button>
-      </div>
-
-      <div className= "showCompleted">
-        <button type="button" className="btn btn-primary" aria-pressed="true" onClick={showIncompleteTasks}>
-          <span>Show Incomplete Tasks</span>
-        </button>
-      </div>
-
-    <div className="list">
-      <ul>
-        <li className="todo stack-small">
-          <div>
-            <input id="todo-2" type="checkbox" defaultChecked={props.completed}/>
-            <label className="todo-label">
-              {props.name}
-            </label>
-          </div>
-
-          <div className="btn-group">
-            <button type="button" className="btn btn-primary" onClick={deleteFromList}>
-              Delete 
-            </button><span>{props.name}</span>
-          </div>
+//           <div className="btn-group">
+//             <button type="button" className="btn btn-primary" onClick={deleteFromList}>
+//               Delete 
+//             </button><span>{props.name}</span>
+//           </div>
           
-        </li>
-      </ul>
-      </div>
-    </div>
-    );
-  }
+//         </li>
+//       </ul>
+//       </div>
+//     </div>
+//     );
+  // }
 
 
