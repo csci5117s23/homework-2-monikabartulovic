@@ -5,7 +5,7 @@
 // a button or checkbox that allows you to mark a to-do item as “done”
 // a link to visit /done
 
-import React from "react";
+import React, { Component, useState }from "react";
 import { Link,Route } from 'react-router-dom';
 
 
@@ -28,65 +28,32 @@ function showIncompleteTasks(){ // showing only the incomplete tasks
 }
 
 function showCompletedTasks(){ // showing only the completed tasks
-
 }
 
-// export default function TodoList(props) {
-//     return (
-//       <div className="addToList">
-//       <form>
-//         <h2 className="label-wrapper">
-//           <label for="new-todo-input" className="label__lg">
-//             Tasks
-//           </label>
-//         </h2>
-//         <input type="text" id="new-todo" placeholder="add new task"
-//         />
 
-//         <button type="submit" className="btn btn-primary" onClick={addToList}>
-//           Add
-//         </button>  
-//       </form>
+export default function Todo(props) {
+  return (
+    <li className="todo stack-small">
 
-//       <div className= "showAllTasks">
-//         <button type="button" className="btn btn-primary" aria-pressed="true" onClick={showAllItems}>
-//           <span>Show All Tasks</span>
-//         </button>
-//       </div>
+      <div className="c-cb">
+        <input id="todo-0" type="checkbox" defaultChecked={props.completed} />
+        <label className="todo-label" htmlFor={props.id}>
+          {props.name}
+        </label>
+      </div>
+      <div className="btn-group">
+        
+        <button type="button" className="btn">
+          Edit <span className="visually-hidden">{props.name}</span> 
+        </button>
 
-//       <div className= "showCompleted">
-//         <button type="button" className="btn btn-primary" aria-pressed="true" onClick={showCompletedTasks}>
-//           <span>Show Completed Tasks</span>
-//         </button>
-//       </div>
+        <button type="button" className="btn btn__danger">
+          Delete <span className="visually-hidden">{props.name}</span>
+        </button>
+      </div>
 
-//       <div className= "showCompleted">
-//         <button type="button" className="btn btn-primary" aria-pressed="true" onClick={showIncompleteTasks}>
-//           <span>Show Incomplete Tasks</span>
-//         </button>
-//       </div>
-
-//     <div className="list">
-//       <ul>
-//         <li className="todo stack-small">
-//           <div>
-//             <input id="todo-2" type="checkbox" defaultChecked={props.completed}/>
-//             <label className="todo-label">
-//               {props.name}
-//             </label>
-//           </div>
-
-//           <div className="btn-group">
-//             <button type="button" className="btn btn-primary" onClick={deleteFromList}>
-//               Delete 
-//             </button><span>{props.name}</span>
-//           </div>
-          
-//         </li>
-//       </ul>
-//       </div>
-//     </div>
-//     );
-  // }
+    </li>
+  );
+}
 
 

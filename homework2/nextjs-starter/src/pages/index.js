@@ -1,18 +1,17 @@
-import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import ReactDOM from 'react-dom/client';
+
 
 const DATA = [
-  { name: "item", completed: true },
+  { id: "todo-0", name: "Eat", completed: true },
+  { id: "todo-1", name: "Sleep", completed: false },
+  { id: "todo-2", name: "Repeat", completed: false }
 ];
 
-ReactDOM.render();
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-    const root = ReactDOM.createRoot(document.getElementById("root"));
+    Reactdom.render( <App />, document.getElementById('root'))
     root.render(
   <React.StrictMode>
     <App tasks={DATA} />
@@ -20,3 +19,5 @@ export default function Home() {
 );
   
 }
+
+
