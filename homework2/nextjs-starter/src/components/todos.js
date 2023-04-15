@@ -9,29 +9,17 @@ import React, { Component, useState }from "react";
 import { Link,Route } from 'react-router-dom';
 
 
-function addToList(){ // adding an item to the todo list
-
-}
-
-function deleteFromList(){ // deleting an item from the todo list
-
-}
-
-
-function showAllItems(){ // showing every single item
-
-
-}
-
-function showIncompleteTasks(){ // showing only the incomplete tasks
-
-}
-
-function showCompletedTasks(){ // showing only the completed tasks
-}
 
 
 export default function Todo(props) {
+  
+if (loading) {
+  return <div>Loading...</div>;
+}
+
+if (!session) {
+  return <div>Please log in to view your to-do list</div>;
+}
   return (
     <li className="todo stack-small">
 
