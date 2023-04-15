@@ -1,0 +1,10 @@
+// See https://containers.dev/implementors/json_reference/ for configuration reference
+{
+    "name": "Codehooks Devcontainer",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+  "remoteUser": "node",
+    "forwardPorts": [3000],
+    "postCreateCommand": "sudo npm install -g codehooks"
+}

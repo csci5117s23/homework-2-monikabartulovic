@@ -20,5 +20,5 @@ Please fill out all of the following sections to help us grade your submission:
 
 
 ## References
-* I used code from the MDN website https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_todo_list_beginning to help me get started since I had trouble with React/Components but after going through this site it
-helped me understand the concepts more and I was able to alter the code to my own personal list. It really helped me understand React.
+* I used code from the MDN website https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_todo_list_beginning to help me with the ToDoList functionality since I had trouble with React/Components but after going through this site it
+helped me understand the concepts more and I was able to alter some of the code to my own personal list.

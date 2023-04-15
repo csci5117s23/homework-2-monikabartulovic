@@ -4,10 +4,14 @@
 // add some visual indication on the page that these are “done” to-do items
 // a link to /todos
 import { Link,Route } from 'react-router-dom';
+import Todo from './todos';
 
 export default function Done(){
     return (
-        hello
+        <Todo 
+        completed={task.completed}>
+
+        </Todo>
     );
 }
 

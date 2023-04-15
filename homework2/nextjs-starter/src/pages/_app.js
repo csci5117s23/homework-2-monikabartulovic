@@ -4,14 +4,14 @@ import Login from '../components/login';
 import Form from "../components/form";
 import FilterButton from "../components/FilterButton";
 import { ClerkProvider } from '@clerk/nextjs'
-
+// could not get coho login to work, weird issue with mac
 
 export default function App(props) {
   const [tasks, setTasks] = useState(props.tasks);
 
   function addTask(name) {
     const newTask = { id: "id", name, completed: false };
-    setTasks([...tasks, newTask]);
+    setTasks[(newTask)];
   }
 
   const taskList = tasks?.map((task) => (
