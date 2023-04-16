@@ -12,14 +12,24 @@ export default function App(props) {
   function addTask(name) {
     const newTask = { id: "id", name, completed: false };
     setTasks[(newTask)];
+
   }
 
+  function deleteTask(id) {
+    const remainingTasks = tasks.filter((task) => id !== task.id);
+    setTasks(remainingTasks);
+  }
+  
+  function toggleTaskCompleted(id) {
+    console.log(tasks[0])
+  }
   const taskList = tasks?.map((task) => (
     <Todo
       id={task.id}
       name={task.name}
       completed={task.completed}
       key={task.id}
+      toggleTaskCompleted={toggleTaskCompleted}
     />
   )
 );
@@ -34,6 +44,10 @@ export default function App(props) {
   // </ClerkProvider>
   // )
   //   </>
+  <>
+  <Login>
+
+  </Login>
 
     <div className="todoapp stack-large">
       <h1>Monika's Todo List</h1>
@@ -53,6 +67,7 @@ export default function App(props) {
        {taskList}
       </ul>
 
-    </div> // entire div
+    </div> 
+    </>
   );
 }

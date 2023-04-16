@@ -3,7 +3,7 @@ import React from "react";
 function FilterButton(props) {
   return (
     <button type="button" className="btn toggle-btn" aria-pressed="true">
-      <span className="visually-hidden">Show All Tasks</span>
+      <span className="visually-hidden">{props.id}</span>
     </button>
   );
 }

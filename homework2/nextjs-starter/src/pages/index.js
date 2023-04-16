@@ -11,11 +11,13 @@ const DATA = [
 
 
 export default function Home() {
+
     Reactdom.render( <App />, document.getElementById('root'))
     root.render(
   <React.StrictMode>
     <App tasks={DATA} />
   </React.StrictMode>
+  
 );
   
 }
