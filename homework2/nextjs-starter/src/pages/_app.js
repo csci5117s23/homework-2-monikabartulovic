@@ -4,6 +4,7 @@ import Login from '../components/login';
 import Form from "../components/form";
 import FilterButton from "../components/FilterButton";
 import { ClerkProvider } from '@clerk/nextjs'
+var process = require("process");   // THIS LINE
 // could not get coho login to work, weird issue with mac
 
 export default function App(props) {
